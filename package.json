@@ -1,0 +1,15 @@
+{
+  "name": "rewatch-dev-deps-build-test",
+  "packageManager": "yarn@4.9.1",
+  "scripts": {
+    "clean": "rescript clean",
+    "build": "rescript --dev",
+    "watch": "rescript watch --dev",
+    "test": "rescript build --dev && pta test/*.test.res.mjs"
+  },
+  "devDependencies": {
+    "@dusty-phillips/rescript-zora": "^4.0.0",
+    "pta": "^1.3.0",
+    "rescript": "^12.0.0-beta.1"
+  }
+}
